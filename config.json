@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-20T15:43:44",
+  "n_rows_total": 450,
+  "n_studies": 67,
+  "threshold_ratio": 1.25,
+  "threshold_ln": 0.22314355131420976,
+  "tasks": {
+    "3class": {
+      "n_rows": 450,
+      "order": [
+        "faster",
+        "no change",
+        "slower"
+      ]
+    },
+    "binary": {
+      "n_rows": 344,
+      "order": [
+        "faster",
+        "slower"
+      ]
+    }
+  },
+  "tiers": {
+    "A": [
+      "pesticide_class",
+      "pesticide_rdkit_cluster",
+      "pesticide_MW",
+      "pesticide_logD74",
+      "pesticide_logD55",
+      "chemspider__LogP",
+      "pesticide_logD_pH_sensitivity",
+      "Hydrophobicity",
+      "Mobility",
+      "DT50 class",
+      "feedstock_group",
+      "processing_group",
+      "amendment_application_rate_g_kg",
+      "soil_cluster",
+      "soil_texture",
+      "soil_clay",
+      "soil_silt",
+      "Sterile/non-sterile",
+      "temperature_mean_c",
+      "log_DT50_control",
+      "log1p_pesticide_concentration"
+    ],
+    "B": [
+      "pesticide_class",
+      "pesticide_rdkit_cluster",
+      "pesticide_MW",
+      "pesticide_logD74",
+      "pesticide_logD55",
+      "chemspider__LogP",
+      "pesticide_logD_pH_sensitivity",
+      "Hydrophobicity",
+      "Mobility",
+      "DT50 class",
+      "feedstock_group",
+      "processing_group",
+      "amendment_application_rate_g_kg",
+      "soil_cluster",
+      "soil_texture",
+      "soil_clay",
+      "soil_silt",
+      "Sterile/non-sterile",
+      "temperature_mean_c",
+      "log_DT50_control",
+      "log1p_pesticide_concentration",
+      "Replicates",
+      "soil_pH",
+      "soil_OC",
+      "amendment_carbon",
+      "amendment_pH"
+    ]
+  },
+  "categorical": [
+    "soil_texture",
+    "pesticide_class",
+    "pesticide_rdkit_cluster",
+    "feedstock_group",
+    "processing_group",
+    "soil_cluster",
+    "Sterile/non-sterile"
+  ],
+  "ordinal_numeric": [
+    "Hydrophobicity",
+    "Mobility",
+    "DT50 class"
+  ],
+  "n_outer": 5,
+  "n_inner": 4,
+  "n_draws": 30,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "search_space": {
+    "learning_rate": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x1166d0250>",
+    "max_iter": "<scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x11657c3d0>",
+    "max_leaf_nodes": "<scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x1166d4790>",
+    "min_samples_leaf": "<scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x1166d2050>",
+    "l2_regularization": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x1166d3850>",
+    "max_features": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x115fe14d0>"
+  },
+  "early_stopping": false,
+  "dropped_studies": []
+}
